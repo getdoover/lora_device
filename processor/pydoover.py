@@ -197,7 +197,7 @@ class channel:
         self.channel_name = result['name']
 
 
-    def get_aggreate(self):
+    def get_aggregate(self):
 
         if self.json_result is None:
             self.update()

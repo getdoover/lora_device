@@ -1,5 +1,6 @@
 // EXAMPLE ONLY
 
+#include <Arduino.h>
 
 // Put any code that will be deployed to end device in this directory.
 // For example, if you are using an Arduino project, put it in here.
@@ -44,3 +45,17 @@ uint8_t MsbNodeAppKey[16] = { {{ app_key_msb_array }} };
 uint8_t LsbNodeAppKey[16] = { {{ app_key_lsb_array }} };
 // The result of this line after downloading from Doover will be;
 // uint8_t nodeAppEUI[8] = { 0x0F, 0x0E, 0x0D, 0x0C, 0x0B, 0x0A, 0x09, 0x08, 0x07, 0x06, 0x05, 0x04, 0x03, 0x02, 0x01, 0x00 };
+
+
+
+
+
+
+
+void setup() {
+  // put your setup code here, to run once:
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+}

@@ -14,7 +14,16 @@ from regex import P
 
 ## You can import the pydoover module to interact with Doover based on decisions made in this function
 ## Just add the current directory to the path first
-sys.path.append(os.path.dirname(__file__))
+
+## attempt to delete any loaded pydoover modules that persist across lambdas
+if 'pydoover' in sys.modules:
+    del sys.modules['pydoover']
+try: del pydoover
+except: pass
+try: del pd
+except: pass
+
+# sys.path.append(os.path.dirname(__file__))
 import pydoover as pd
 
 

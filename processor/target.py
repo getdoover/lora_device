@@ -1,9 +1,5 @@
 #!/usr/bin/python3
-from operator import truediv
-import os, sys, time, json
-
-from regex import P
-
+import os, sys, time, json, traceback
 
 ## This is the definition for a tiny lambda function
 ## Which is run in response to messages processed in Doover's 'Channels' system
@@ -70,6 +66,7 @@ class target:
 
         except Exception as e:
             self.add_to_log("ERROR attempting to process message - " + str(e))
+            self.add_to_log(traceback.format_exc())
 
         self.complete_log()
 
